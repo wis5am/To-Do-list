@@ -1,0 +1,48 @@
+<!--
+    Created by: Hussein Mansour
+    Created on: 2023/07/22
+    Course/Section: CST8285/300
+    Description: This is the index.html webpage 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hussein Mansour">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <script src="../JS/Script.js" defer></script>
+        <title>TaskWise</title>
+    </head>
+    <body>
+        
+
+        <header>
+            <img class="header-logo" src="images/logo2.png" alt="alternative_text">
+
+            <nav class="nav-header-right">
+                <a class="home" href="index.html">MyTasks</a>
+                <a href="login.html">Login</a> 
+                <a href="signup.html">Sign up</a>  
+            </nav>
+        </header>
+        
+        <div class="container">
+            <div class="todo-app">
+                    <h2>To-Do List <img src="images/icons8-todo-list.gif" alt="gif"></h2>
+                    <div class="row">
+                        <input type="text" id="input-box" placeholder="Add your task">
+                        <button id="butt" onclick="addTask()">Add</button>
+                    </div>
+                    <ul id="list-container"></ul>
+            </div>
+        </div>
+
+        <footer>
+            <p id="footerP">&copy; 2023 TaskWise - All rights reserved</p>
+        </footer>
+
+    </body>
+</html>

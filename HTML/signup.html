@@ -1,0 +1,89 @@
+<!--
+    Created by: Hussein Mansour
+    Created on: 2023/07/22
+    Course/Section: CST8285/300
+    Description: This is the signup.html webpage 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hussein Mansour">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <script src="../JS/Script.js" defer></script>
+        <title>TaskWise</title>
+    </head>
+    <body class="body2">
+
+        <header>
+            <img class="header-logo" src="images/logo2.png" alt="alternative_text">
+
+            <nav class="nav-header-right">
+                <a class="home" href="index.html">MyTasks</a>
+                <a href="login.html">Login</a> 
+            </nav>
+        </header>
+
+        <div class="formcontainer">
+            <form action="../PHP/SignUp.php" method="POST" onsubmit="return validate();">
+
+                <div class="top-header">
+                    <p>Not registered yet?</p>
+                    <h2>Sign Up</h2>
+                </div>
+
+                <div class="textfield">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <img class="user-logo" src="images/icons8-letter-24.png" alt="user icon">
+                </div>
+                <div id="emailError" class="error-message">
+                    <b>X</b> Email address should be non-empty with the format xyx@xyz.xyz.
+                </div>
+
+                <div class="textfield">
+                    <input type="text" name="login" id="login" placeholder="User name">
+                    <img class="user-logo" src="images/icons8-customer-24.png" alt="user icon">
+                </div>
+                <div id="loginError" class="error-message">
+                    <b>X</b> User name should not be non-empty, and within 20 characters long.
+                </div>
+
+                <div class="textfield">
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <img class="user-logo" src="images/lock-icon.png" alt="user icon">
+                </div>
+                <div id="passwordError" class="error-message">
+                    <b>X</b> Password should be at least 6 characters: 1 uppercase, 1 lowercase.
+                </div>
+
+                <div class="textfield">
+                    <input type="password" id="pass2" placeholder="Re-type Password">
+                    <img class="user-logo" src="images/icons8-password-reset-24.png" alt="user icon">
+                </div>
+                <div id="passwordError2" class="error-message">
+                    <b>X</b> Please retype password.
+                </div>
+
+                <div class="textfield2">
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword">Show Password</label>
+                </div>
+
+                <button id="submit" type="submit">Sign-Up</button>
+
+                <div class="text-center">
+                    <p class="bottom-p1">Already have an account? <a href="login.html" class="bottom-p2">Login</a></p>
+                </div> 
+
+            </form>
+        </div>
+
+        <footer>
+            <p id="footerP">&copy; 2023 TaskWise - All rights reserved</p>
+        </footer>
+
+    </body>
+</html>

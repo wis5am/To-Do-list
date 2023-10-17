@@ -1,0 +1,67 @@
+<!--
+    Created by: Hussein Mansour
+    Created on: 2023/07/22
+    Course/Section: CST8285/300
+    Description: This is the login.html webpage 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Hussein Mansour">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <script src="../JS/Script.js" defer></script>
+        <title>TaskWise</title>
+    </head>
+    <body class="body2">
+
+        <header>
+            <img class="header-logo" src="images/logo2.png" alt="alternative_text">
+
+            <nav class="nav-header-right">
+                <a class="home" href="index.html">MyTasks</a>
+                <a href="signup.html">Sign up</a>  
+            </nav>
+        </header>
+
+        <div class="formcontainer">
+            <form action="../PHP/Login.php" method="POST" onsubmit="return validate();">
+
+                <div class="top-header">
+                    <p>Have an account?</p>
+                    <h2>Login</h2>
+                </div>
+    
+                <div class="textfield">
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                    <img class="user-logo" src="images/icons8-customer-24.png" alt="user icon">
+                </div>
+    
+                <div class="textfield">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <img class="user-logo" src="images/lock-icon.png" alt="user icon">
+                </div>
+
+                <div class="textfield2">
+                    <input type="checkbox" id="showPassword">
+                    <label for="showPassword">Show Password</label>
+                </div>
+    
+                <button id="submit" type="submit">login</button>
+
+                <div class="text-center">
+                    <p class="bottom-p1">Do not have an account? <a href="signup.html" class="bottom-p2">Sign Up</a></p>
+                </div> 
+
+            </form>
+        </div>
+
+        <footer>
+            <p id="footerP">&copy; 2023 TaskWise - All rights reserved</p>
+        </footer>
+
+    </body>
+</html>
